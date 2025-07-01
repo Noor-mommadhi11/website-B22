@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noor's Portfolio</title>
+  <link rel="stylesheet" href="style .css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Noor</h1>
+      <p>Aspiring Full Stack Developer</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="about container">
+    <img src="noor.jpg".jpg" alt="Noor" class="profile" />
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>Hi! I'm Noor, a passionate and motivated learner in full stack development. I specialize in clean UI, responsive designs, and writing code that brings ideas to life.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="projects container">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="project.jfif" alt="Project 1">
+        <h3>Portfolio Website</h3>
+        <p>A stylish responsive site created using HTML5 and CSS3 only.</p>
+      </div>
+      <div class="card">
+        <img src="pro.jfif" alt="Project 2">
+        <h3>Flexbox Calculator</h3>
+        <p>Designed a modern calculator UI layout using pure Flexbox.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact container">
+  <h2>Contact Me</h2>
+  <form>
+    <table>
+      <tr>
+        <td><label for="name">Full Name:</label></td>
+        <td><input type="text" id="name" name="name" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="phone">Phone Number:</label></td>
+        <td><input type="tel" id="phone" name="phone" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="education">Education:</label></td>
+        <td>
+          <select id="education" name="education" required>
+            <option value="">--Select--</option>
+            <option>High School</option>
+            <option>Diploma</option>
+            <option>Graduate</option>
+            <option>Post Graduate</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <label><input type="radio" name="gender" value="Male" required> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+          <label><input type="radio" name="gender" value="Other"> Other</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Languages Known:</td>
+        <td>
+          <label><input type="checkbox" name="lang" value="English"> English</label>
+          <label><input type="checkbox" name="lang" value="Hindi"> Hindi</label>
+          <label><input type="checkbox" name="lang" value="Tamil"> Tamil</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="message">Message:</label></td>
+        <td><textarea id="message" name="message" rows="4" required></textarea></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td><button type="submit">Send Message</button></td>
+      </tr>
+    </table>
+  </form>
+</section>
+
+
+  <footer>
+    <p>© 2025 Noor — Made with  using HTML & CSS3</p>
+  </footer>
+
+</body>
+</html>

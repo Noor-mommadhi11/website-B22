@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Calculator</title>
+ <link href="style.css" rel="stylesheet">
+
+  <script>
+
+     function add()
+        {
+            var x=document.getElementById("num1").value;//4
+            var y=document.getElementById("num2").value;//3
+            var z=parseInt(x)+parseInt(y);//7
+           document.getElementById("result").innerText="Result=:"+z;
+        }
+
+    function sub()
+        {
+            var x=document.getElementById("num1").value;//4
+            var y=document.getElementById("num2").value;//3
+            var z=parseInt(x)-parseInt(y);//7
+           document.getElementById("result").innerText="Result=:"+z;
+        }
+
+     function mul()
+        {
+            var x=document.getElementById("num1").value;//4
+            var y=document.getElementById("num2").value;//3
+            var z=parseInt(x)*parseInt(y);//7
+           document.getElementById("result").innerText="Result=:"+z;
+        }
+
+     function dev()
+        {
+            var x=document.getElementById("num1").value;//4
+            var y=document.getElementById("num2").value;//3
+            var z=parseInt(x)/parseInt(y);//7
+           document.getElementById("result").innerText="Result=:"+z;
+        }
+    
+
+    function square() {
+      let x = parseFloat(document.getElementById("num1").value);
+      document.getElementById("result").innerText = "Result = " + (x * x);
+    }
+
+    function cube() {
+      let x = parseFloat(document.getElementById("num1").value);
+      document.getElementById("result").innerText = "Result = " + (x * x * x);
+    }
+
+    function Clear() {
+      document.getElementById("num1").value = "";
+      document.getElementById("num2").value = "";
+      document.getElementById("result").innerText = "";
+    }
+  </script>
+</head>
+<body>
+
+  <div class="calculator">
+    <h1>Simple Calculator</h1>
+
+    <div class="inputs">
+      <input type="text" id="num1" placeholder="Enter Number 1" />
+      <input type="text" id="num2" placeholder="Enter Number 2" />
+    </div>
+
+    <div class="buttons">
+      <button onclick="add()">+</button>
+      <button onclick="sub()">−</button>
+      <button onclick="mul()">×</button>
+      <button onclick="dev()">÷</button>
+      <button onclick="square()">x²</button>
+      <button onclick="cube()">x³</button>
+      <button class="clear-btn " onclick="Clear()">Clear</button>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+</body>
+</html>
